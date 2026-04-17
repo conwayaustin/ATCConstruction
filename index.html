@@ -1,202 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- SEO SECTION -->
+
+    <!-- ================= SEO SECTION ================= -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ATC Construction - Professional concrete and construction services. Driveways, patios, coatings, and more. Get a free quote today.">
-    <meta name="keywords" content="concrete contractor, construction, driveway, patio, epoxy coating, ATC Construction">
+
+    <title>ATC Construction | Concrete Driveways, Patios & Epoxy Coatings</title>
+
+    <meta name="description" content="ATC Construction provides professional concrete services including driveways, patios, sidewalks, and epoxy coatings. Request a free quote today.">
+    <meta name="keywords" content="concrete contractor, driveway installation, patio builder, epoxy flooring, ATC Construction">
     <meta name="author" content="ATC Construction">
 
-    <title>ATC Construction</title>
+    <!-- SOCIAL -->
+    <meta property="og:title" content="ATC Construction">
+    <meta property="og:description" content="Professional concrete & coating services built to last.">
+    <meta property="og:type" content="website">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
-        body {
-            line-height: 1.6;
-        }
+<style>
 
-        header {
-            background: #111;
-            color: white;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        header h1 {
-            font-size: 1.5rem;
-        }
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
 
-        nav a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-        }
+/* HEADER (UNIFIED ACROSS SITE) */
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
 
-        /* HERO */
-        .hero {
-            background: url('YOUR-HERO-IMAGE.jpg') center/cover no-repeat;
-            color: white;
-            height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
+.logo {
+    font-weight: 800;
+    font-size: 1.4rem;
+}
 
-        .hero-content {
-            background: rgba(0,0,0,0.6);
-            padding: 2rem;
-        }
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+}
 
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
+.cta-btn {
+    background: orange;
+    padding: 10px 18px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
 
-        .btn {
-            background: orange;
-            padding: 10px 20px;
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* HERO */
+.hero {
+    height: 90vh;
+    background: url('YOUR-HERO-IMAGE.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
-        /* SECTIONS */
-        section {
-            padding: 60px 20px;
-            text-align: center;
-        }
+.hero-overlay {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 60px;
+    max-width: 900px;
+}
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
 
-        .service {
-            background: #f4f4f4;
-            padding: 20px;
-        }
+.hero p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
 
-        /* IMAGE PLACEHOLDERS */
-        .img-placeholder {
-            width: 100%;
-            height: 200px;
-            background: #ccc;
-            margin-bottom: 15px;
-        }
+/* TRUST BAR */
+.trust {
+    background: #111;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+    padding: 25px 20px;
+    font-weight: 600;
+}
 
-        /* GALLERY */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-        }
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
 
-        .gallery div {
-            height: 200px;
-            background: #bbb;
-        }
+h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
 
-        /* CTA */
-        .cta {
-            background: #111;
-            color: white;
-        }
+/* SERVICES PREVIEW */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
 
-        footer {
-            background: #000;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+.card {
+    background: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
 
-        /* MOBILE */
-        @media(max-width: 768px){
-            .hero h2 {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    height: 180px;
+    background: #ccc;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+/* ABOUT */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: left;
+    align-items: center;
+}
+
+.about p {
+    margin-bottom: 15px;
+}
+
+/* CTA SECTION */
+.cta-section {
+    background: orange;
+    color: black;
+    padding: 70px 20px;
+}
+
+.cta-section a {
+    display: inline-block;
+    margin-top: 20px;
+    background: black;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-overlay {
+        padding: 30px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+</style>
 </head>
+
 <body>
 
+<!-- HEADER -->
 <header>
-    <h1>ATC CONSTRUCTION</h1>
+    <div class="logo">ATC CONSTRUCTION</div>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="projects.html">Projects</a>
     </nav>
+    <a href="contact.html" class="cta-btn">Contact Us</a>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-    <div class="hero-content">
-        <h2>Building Strong Foundations That Last</h2>
-        <p>Driveways, Patios, Coatings & More</p>
-        <a href="#" class="btn">GET A FREE QUOTE</a>
+    <div class="hero-overlay">
+        <h1>Concrete & Coating Experts You Can Trust</h1>
+        <p>Driveways • Patios • Sidewalks • Epoxy Floors</p>
+        <a href="contact.html" class="cta-btn">GET A FREE QUOTE</a>
     </div>
 </section>
 
-<!-- SERVICES -->
+<!-- TRUST BAR -->
+<div class="trust">
+    <div>✔ Licensed & Insured</div>
+    <div>✔ 20+ Years Experience</div>
+    <div>✔ Residential & Commercial</div>
+    <div>✔ Free Estimates</div>
+</div>
+
+<!-- SERVICES PREVIEW -->
 <section>
     <h2>Our Services</h2>
+
     <div class="services">
 
-        <div class="service">
-            <div class="img-placeholder"></div>
-            <h3>Concrete Driveways</h3>
-            <p>Durable and professionally installed driveways.</p>
+        <div class="card">
+            <div class="card-img"></div>
+            <div class="card-content">
+                <h3>Driveways</h3>
+                <p>Strong, long-lasting concrete driveway installations.</p>
+            </div>
         </div>
 
-        <div class="service">
-            <div class="img-placeholder"></div>
-            <h3>Patios</h3>
-            <p>Beautiful outdoor living spaces built to last.</p>
+        <div class="card">
+            <div class="card-img"></div>
+            <div class="card-content">
+                <h3>Patios</h3>
+                <p>Custom outdoor spaces built for durability and style.</p>
+            </div>
         </div>
 
-        <div class="service">
-            <div class="img-placeholder"></div>
-            <h3>Epoxy Coatings</h3>
-            <p>Garage and commercial floor coatings.</p>
+        <div class="card">
+            <div class="card-img"></div>
+            <div class="card-content">
+                <h3>Epoxy Flooring</h3>
+                <p>High-performance garage and commercial coatings.</p>
+            </div>
         </div>
 
     </div>
 </section>
 
-<!-- ABOUT -->
-<section>
-    <h2>Why Choose ATC Construction?</h2>
-    <p>Over 20 years of experience delivering high-quality construction services with reliability and precision.</p>
-</section>
+<!-- ABOUT PREVIEW -->
+<section class="about">
 
-<!-- GALLERY -->
-<section>
-    <h2>Our Work</h2>
-    <div class="gallery">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div>
+        <h2>About ATC Construction</h2>
+        <p>We are a professional concrete contractor focused on quality, precision, and long-lasting results.</p>
+        <p>Every project is handled with care, from small residential driveways to large commercial installations.</p>
+        <p>Our goal is simple: build work that lasts.</p>
     </div>
+
+    <div>
+        <div style="height:300px;background:#ccc;border-radius:10px;"></div>
+    </div>
+
 </section>
 
 <!-- CTA -->
-<section class="cta">
+<section class="cta-section">
     <h2>Ready to Start Your Project?</h2>
-    <p>Contact us today for a free estimate.</p>
-    <a href="#" class="btn">CONTACT US</a>
+    <p>Get your free estimate today from ATC Construction.</p>
+    <a href="contact.html">CONTACT US</a>
 </section>
 
 <!-- FOOTER -->
