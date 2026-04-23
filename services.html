@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
 
-    <!-- ================= SEO SECTION ================= -->
+    <!-- ================= SEO SECTION (EDIT THIS) ================= -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ATC Construction Services | Concrete, Patios & Coatings</title>
+    <title>ATC Construction Services | Concrete & Coatings</title>
 
-    <meta name="description" content="ATC Construction offers professional concrete services including driveways, patios, sidewalks, and epoxy floor coatings.">
-    <meta name="keywords" content="concrete services, driveway installation, patio construction, epoxy flooring, ATC Construction services">
+    <meta name="description" content="Explore ATC Construction services including driveways, patios, sidewalks, and epoxy flooring.">
+    <meta name="keywords" content="concrete services, driveway installation, patio construction, epoxy flooring contractor">
     <meta name="author" content="ATC Construction">
-    <!-- ================================================= -->
+    <!-- =========================================================== -->
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
@@ -27,15 +27,14 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #222;
-    line-height: 1.6;
 }
 
-/* HEADER (same across site) */
+/* HEADER */
 header {
     position: sticky;
     top: 0;
     background: white;
-    padding: 15px 40px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,11 +44,15 @@ header {
 
 .logo {
     font-weight: 800;
-    font-size: 1.4rem;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
-    margin-left: 25px;
     text-decoration: none;
     color: #222;
     font-weight: 600;
@@ -58,14 +61,21 @@ nav a {
 .cta-btn {
     background: orange;
     padding: 10px 18px;
-    color: black;
-    font-weight: 700;
+    font-weight: bold;
     text-decoration: none;
+    color: black;
+}
+
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 /* HERO */
-.services-hero {
-    height: 45vh;
+.hero {
+    height: 50vh;
     background: url('YOUR-SERVICES-HERO.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -74,26 +84,27 @@ nav a {
 
 .hero-overlay {
     background: rgba(0,0,0,0.6);
-    color: white;
     padding: 40px;
+    color: white;
     text-align: center;
 }
 
-.hero-overlay h1 {
+.hero h1 {
     font-size: 2.5rem;
 }
 
 /* SECTION */
 section {
     padding: 70px 20px;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
+    text-align: center;
 }
 
 /* SERVICES GRID */
-.services-grid {
+.services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     gap: 25px;
 }
 
@@ -101,11 +112,6 @@ section {
     background: #f4f4f4;
     border-radius: 10px;
     overflow: hidden;
-    transition: 0.2s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
 }
 
 .service-img {
@@ -121,10 +127,9 @@ section {
     margin-bottom: 10px;
 }
 
-/* FULL WIDTH CTA */
+/* CTA */
 .cta-section {
     background: orange;
-    text-align: center;
     padding: 60px 20px;
 }
 
@@ -135,22 +140,6 @@ section {
     color: white;
     padding: 12px 25px;
     text-decoration: none;
-    font-weight: bold;
-}
-
-/* PROCESS SECTION */
-.process {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    text-align: center;
-}
-
-.process div {
-    background: #111;
-    color: white;
-    padding: 25px;
-    border-radius: 10px;
 }
 
 /* FOOTER */
@@ -163,11 +152,36 @@ footer {
 
 /* MOBILE */
 @media (max-width: 768px) {
+
     nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 15px;
+        border-top: 1px solid #eee;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .cta-btn {
         display: none;
     }
 
-    .hero-overlay h1 {
+    .hero h1 {
         font-size: 2rem;
     }
 }
@@ -181,88 +195,79 @@ footer {
 <header>
     <div class="logo">ATC CONSTRUCTION</div>
 
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
     <nav id="nav-menu">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
-        <a href="about.html">About Us</a>
+        <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- HAMBURGER BUTTON -->
-    <div class="hamburger" onclick="toggleMenu()">
-        ☰
-    </div>
-
-    <a href="contact.html" class="cta-btn desktop-only">Contact Us</a>
+    <a href="contact.html" class="cta-btn">Contact Us</a>
 </header>
 
 <!-- HERO -->
-<section class="services-hero">
+<section class="hero">
     <div class="hero-overlay">
         <h1>Our Services</h1>
-        <p>Quality Concrete Work Built to Last</p>
+        <p>Quality Work Built to Last</p>
     </div>
 </section>
 
 <!-- SERVICES -->
 <section>
 
-    <h2 style="text-align:center; margin-bottom:40px;">What We Offer</h2>
+    <h2>What We Offer</h2>
 
-    <div class="services-grid">
+    <div class="services">
 
-        <!-- SERVICE 1 -->
         <div class="service-card">
             <div class="service-img"></div>
             <div class="service-content">
                 <h3>Concrete Driveways</h3>
-                <p>Durable, smooth, and professionally installed driveways built for long-term performance.</p>
+                <p>Strong, long-lasting driveways installed with precision and care.</p>
             </div>
         </div>
 
-        <!-- SERVICE 2 -->
         <div class="service-card">
             <div class="service-img"></div>
             <div class="service-content">
                 <h3>Patios</h3>
-                <p>Custom outdoor living spaces designed for comfort, style, and durability.</p>
+                <p>Custom outdoor spaces designed for durability and style.</p>
             </div>
         </div>
 
-        <!-- SERVICE 3 -->
-        <div class="service-card">
-            <div class="service-img"></div>
-            <div class="service-content">
-                <h3>Epoxy Flooring</h3>
-                <p>High-performance epoxy coatings for garages, basements, and commercial spaces.</p>
-            </div>
-        </div>
-
-        <!-- SERVICE 4 -->
         <div class="service-card">
             <div class="service-img"></div>
             <div class="service-content">
                 <h3>Sidewalks</h3>
-                <p>Clean, safe, and code-compliant concrete sidewalks for residential and commercial properties.</p>
+                <p>Clean, safe, and professionally finished walkways.</p>
             </div>
         </div>
 
-        <!-- SERVICE 5 -->
         <div class="service-card">
             <div class="service-img"></div>
             <div class="service-content">
-                <h3>Concrete Repair</h3>
-                <p>Crack filling, resurfacing, and restoration to extend the life of your concrete.</p>
+                <h3>Epoxy Flooring</h3>
+                <p>High-performance coatings for garages and commercial spaces.</p>
             </div>
         </div>
 
-        <!-- SERVICE 6 -->
+        <div class="service-card">
+            <div class="service-img"></div>
+            <div class="service-content">
+                <h3>Concrete Repairs</h3>
+                <p>Restore and extend the life of your existing concrete surfaces.</p>
+            </div>
+        </div>
+
         <div class="service-card">
             <div class="service-img"></div>
             <div class="service-content">
                 <h3>Custom Projects</h3>
-                <p>Have a unique idea? We build custom concrete solutions tailored to your vision.</p>
+                <p>Have something unique in mind? We can bring it to life.</p>
             </div>
         </div>
 
@@ -270,34 +275,10 @@ footer {
 
 </section>
 
-<!-- PROCESS -->
-<section>
-    <h2 style="text-align:center; margin-bottom:40px;">Our Process</h2>
-
-    <div class="process">
-
-        <div>
-            <h3>1. Consultation</h3>
-            <p>We discuss your project and provide a free estimate.</p>
-        </div>
-
-        <div>
-            <h3>2. Planning</h3>
-            <p>We design and prepare the perfect solution for your space.</p>
-        </div>
-
-        <div>
-            <h3>3. Execution</h3>
-            <p>Our team completes the job with precision and care.</p>
-        </div>
-
-    </div>
-</section>
-
 <!-- CTA -->
 <section class="cta-section">
-    <h2>Ready to Start Your Project?</h2>
-    <p>Contact ATC Construction today for a free estimate.</p>
+    <h2>Need One of These Services?</h2>
+    <p>Let’s talk about your project and get you a free estimate.</p>
     <a href="contact.html">CONTACT US</a>
 </section>
 
@@ -305,6 +286,13 @@ footer {
 <footer>
     <p>© 2026 ATC Construction | All Rights Reserved</p>
 </footer>
+
+<!-- SCRIPT -->
+<script>
+function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
