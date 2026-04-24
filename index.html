@@ -84,9 +84,17 @@ nav a {
 
 .hero-overlay {
     background: rgba(0,0,0,0.6);
-    padding: 50px;
+    padding: 60px 40px;
     color: white;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* THIS fixes spacing */
+    
+    max-width: 700px;
+    margin: auto;
 }
 
 .hero h1 {
@@ -141,7 +149,7 @@ section {
 
 .cta-section a {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 30px;
     background: black;
     color: white;
     padding: 12px 25px;
