@@ -85,7 +85,7 @@ nav a {
 /* HERO */
 .hero {
     height: 50vh;
-    background: url('YOUR-PROJECTS-HERO.jpg') center/cover no-repeat;
+    background: url('images/driveway2.png') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,11 +139,31 @@ section {
 
 .project-card {
     height: 220px;
-    background: #ccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 10px;
     position: relative;
+    overflow: hidden;
+}
+.driveway {
+    background-image: url("images/driveway4.png");
 }
 
+.patio {
+    background-image: url("images/porch3.png");
+}
+
+.walkway {
+    background-image: url("images/sidewalk3.png");
+}
+
+.pooldeck {
+    background-image: url("images/pooldeck3.png");
+}
+.customprojects {
+    background-image: url("images/vertical2.png");
+}
 .project-overlay {
     position: absolute;
     bottom: 0;
@@ -153,6 +173,7 @@ section {
     padding: 10px;
     font-size: 0.9rem;
 }
+
 
 /* CTA */
 .cta-section {
@@ -253,34 +274,30 @@ footer {
         <button>All</button>
         <button>Driveways</button>
         <button>Patios</button>
-        <button>Epoxy</button>
-        <button>Sidewalks</button>
+        <button>Pool Decks</button>
+        <button>Walkways</button>
     </div>
 
     <!-- GALLERY -->
     <div class="gallery">
 
-        <div class="project-card">
+        <div class="project-card driveway">
             <div class="project-overlay">Driveway Project</div>
         </div>
 
-        <div class="project-card">
-            <div class="project-overlay">Stamped Patio</div>
+        <div class="project-card patio">
+            <div class="project-overlay">Patio</div>
         </div>
 
-        <div class="project-card">
-            <div class="project-overlay">Garage Epoxy Floor</div>
+        <div class="project-card pooldeck">
+            <div class="project-overlay">Pool Decks</div>
         </div>
 
-        <div class="project-card">
-            <div class="project-overlay">Sidewalk Install</div>
+        <div class="project-card walkway">
+            <div class="project-overlay">Walkways</div>
         </div>
 
-        <div class="project-card">
-            <div class="project-overlay">Concrete Repair</div>
-        </div>
-
-        <div class="project-card">
+        <div class="project-card customprojects">
             <div class="project-overlay">Custom Project</div>
         </div>
 

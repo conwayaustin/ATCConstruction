@@ -87,7 +87,7 @@ nav a {
 /* HERO */
 .hero {
     height: 90vh;
-    background: url('YOUR-HERO-IMAGE.jpg') center/cover no-repeat;
+    background: url('images/Hero1.png') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,11 +141,29 @@ section {
     background: #f4f4f4;
     border-radius: 10px;
     overflow: hidden;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 .card-img {
     height: 180px;
-    background: #ccc;
+    background-size: cover;
+    background-position: center 80%; /* 👈 consistent crop */
+    background-repeat: no-repeat;
+}
+
+/* INDIVIDUAL IMAGES */
+.driveway {
+    background-image: url("images/driveway3.png");
+}
+
+.patio {
+    background-image: url("images/patio1.png");
+}
+
+.walkways {
+    background-image: url("images/sidewalk2.png");
 }
 
 .card-content {
@@ -237,7 +255,7 @@ footer {
 <section class="hero">
     <div class="hero-overlay">
         <h1>Concrete & Coatings Done Right</h1>
-        <p>Driveways • Patios • Epoxy Floors</p>
+        <p>Driveways • Patios • Walkways</p>
         <a href="contact.html" class="cta-btn">GET A FREE QUOTE</a>
     </div>
 </section>
@@ -256,7 +274,7 @@ footer {
     <div class="services">
 
         <div class="card">
-            <div class="card-img"></div>
+            <div class="card-img driveway"></div>
             <div class="card-content">
                 <h3>Driveways</h3>
                 <p>Durable and professionally installed concrete driveways.</p>
@@ -264,7 +282,7 @@ footer {
         </div>
 
         <div class="card">
-            <div class="card-img"></div>
+            <div class="card-img patio"></div>
             <div class="card-content">
                 <h3>Patios</h3>
                 <p>Custom outdoor spaces built to last.</p>
@@ -272,10 +290,10 @@ footer {
         </div>
 
         <div class="card">
-            <div class="card-img"></div>
+            <div class="card-img walkways"></div>
             <div class="card-content">
-                <h3>Epoxy Flooring</h3>
-                <p>High-performance coatings for garages and more.</p>
+                <h3>Walkway</h3>
+                <p>Durable and long lasting walkways.</p>
             </div>
         </div>
 
