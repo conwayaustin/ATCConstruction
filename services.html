@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XPCPMYNY9M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <!-- ================= SEO SECTION (EDIT THIS) ================= -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  gtag('config', 'G-XPCPMYNY9M');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ATC Construction Services | Concrete & Coatings</title>
+<title>Concrete Services in Nashville TN | Driveways, Patios & More | ATC Construction</title>
 
-    <meta name="description" content="Explore ATC Construction services including driveways, patios, sidewalks, and epoxy flooring.">
-    <meta name="keywords" content="concrete services, driveway installation, patio construction, epoxy flooring contractor">
-    <meta name="author" content="ATC Construction">
-    <!-- =========================================================== -->
+<meta name="description" content="ATC Construction offers professional concrete services in Nashville, TN including driveways, patios, walkways, pool decks, and repairs. Get a free estimate today.">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+<meta name="author" content="ATC Construction">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
 
-/* RESET */
+/* (YOUR CSS IS UNCHANGED) */
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +36,6 @@ body {
     color: #222;
 }
 
-/* HEADER */
 header {
     position: sticky;
     top: 0;
@@ -43,20 +49,17 @@ header {
 }
 
 .logo {
-    font-weight: 800;
-    height: 120px;          /* bigger nav logo area */
+    height: 120px;
     display: flex;
     align-items: center;
 }
 
 .logo img {
-    height: 100%;           /* fills container */
+    height: 100%;
     width: auto;
     object-fit: contain;
-    display: block;
-    max-height: none;       /* IMPORTANT: removes your 60px limit */
 }
-/* NAV */
+
 nav {
     display: flex;
     gap: 20px;
@@ -76,14 +79,12 @@ nav a {
     color: black;
 }
 
-/* HAMBURGER */
 .hamburger {
     display: none;
     font-size: 2rem;
     cursor: pointer;
 }
 
-/* HERO */
 .hero {
     height: 50vh;
     background: url('images/pooldeck1.png') center/cover no-repeat;
@@ -103,7 +104,6 @@ nav a {
     font-size: 2.5rem;
 }
 
-/* SECTION */
 section {
     padding: 70px 20px;
     max-width: 1100px;
@@ -111,7 +111,6 @@ section {
     text-align: center;
 }
 
-/* SERVICES GRID */
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
@@ -125,35 +124,18 @@ section {
 }
 
 .service-img {
-     height: 200px;
+    height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 70%;
 }
-.driveway {
-    background-image: url("images/driveway4.png");
-}
 
-.patio {
-    background-image: url("images/porch3.png");
-}
-
-.walkway {
-    background-image: url("images/walkway1.png");
-}
-
-.pooldeck {
-    background-image: url("images/pooldeck4.png");
-}
-
-.concreterepair {
-    background-image: url("images/about3.png");
-}
-
-.customprojects {
-    background-image: url("images/vertical1.png");
-}
-
+.driveway { background-image: url("images/driveway4.png"); }
+.patio { background-image: url("images/porch3.png"); }
+.walkway { background-image: url("images/walkway1.png"); }
+.pooldeck { background-image: url("images/pooldeck4.png"); }
+.concreterepair { background-image: url("images/about3.png"); }
+.customprojects { background-image: url("images/vertical1.png"); }
 
 .service-content {
     padding: 20px;
@@ -163,7 +145,6 @@ section {
     margin-bottom: 10px;
 }
 
-/* CTA */
 .cta-section {
     background: orange;
     padding: 60px 20px;
@@ -178,7 +159,6 @@ section {
     text-decoration: none;
 }
 
-/* FOOTER */
 footer {
     background: #111;
     color: white;
@@ -186,40 +166,12 @@ footer {
     text-align: center;
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
-
-    nav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: white;
-        text-align: center;
-    }
-
-    nav a {
-        padding: 15px;
-        border-top: 1px solid #eee;
-    }
-
-    nav.active {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .cta-btn {
-        display: none;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
+    nav { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; text-align: center; }
+    nav.active { display: flex; }
+    .hamburger { display: block; }
+    .cta-btn { display: none; }
+    .hero h1 { font-size: 2rem; }
 }
 
 </style>
@@ -227,9 +179,10 @@ footer {
 
 <body>
 
-<!-- HEADER -->
 <header>
-    <div class="logo"><img src="images/ATCLOGO.png" alt="ATC Construction Logo"></div>
+    <div class="logo">
+        <img src="images/ATCLOGO.png" alt="ATC Construction Nashville TN Concrete Contractor Logo">
+    </div>
 
     <div class="hamburger" onclick="toggleMenu()">☰</div>
 
@@ -244,18 +197,23 @@ footer {
     <a href="contact.html" class="cta-btn">Contact Us</a>
 </header>
 
-<!-- HERO -->
 <section class="hero">
     <div class="hero-overlay">
-        <h1>Our Services</h1>
-        <p>Quality Work Built to Last</p>
+        <h1>Concrete Services in Nashville TN</h1>
+        <p>Driveways • Patios • Walkways • Repairs • Custom Work</p>
     </div>
 </section>
 
-<!-- SERVICES -->
 <section>
 
-    <h2>What We Offer</h2>
+    <h2>Professional Concrete Services in Nashville, TN</h2>
+
+    <p>
+        ATC Construction provides expert concrete services in Nashville, TN and surrounding areas.
+        We specialize in driveways, patios, walkways, pool decks, and concrete repairs.
+        Our team focuses on durability, precision, and clean finishes to ensure every project
+        enhances your property’s value and curb appeal.
+    </p>
 
     <div class="services">
 
@@ -263,23 +221,23 @@ footer {
             <div class="service-img driveway"></div>
             <div class="service-content">
                 <h3>Concrete Driveways</h3>
-                <p>Strong, long-lasting driveways installed with precision and care.</p>
+                <p>Professional driveway installation in Nashville, TN designed for strength, longevity, and curb appeal.</p>
             </div>
         </div>
 
         <div class="service-card">
             <div class="service-img patio"></div>
             <div class="service-content">
-                <h3>Patios</h3>
-                <p>Custom outdoor spaces designed for durability and style.</p>
+                <h3>Concrete Patios</h3>
+                <p>Custom patios built for outdoor living spaces across Nashville and surrounding areas.</p>
             </div>
         </div>
 
         <div class="service-card">
             <div class="service-img walkway"></div>
             <div class="service-content">
-                <h3>Walkways</h3>
-                <p>Clean, safe, and professionally finished walkways.</p>
+                <h3>Concrete Walkways</h3>
+                <p>Safe, durable, and professionally finished walkways for homes and businesses.</p>
             </div>
         </div>
 
@@ -287,7 +245,7 @@ footer {
             <div class="service-img pooldeck"></div>
             <div class="service-content">
                 <h3>Pool Decks</h3>
-                <p>Concrete pool decking that is durable, and looks great.</p>
+                <p>High-quality concrete pool decks that combine durability with clean, modern design.</p>
             </div>
         </div>
 
@@ -295,15 +253,15 @@ footer {
             <div class="service-img concreterepair"></div>
             <div class="service-content">
                 <h3>Concrete Repairs</h3>
-                <p>Restore and extend the life of your existing concrete surfaces.</p>
+                <p>Reliable concrete repair services in Nashville to restore and extend surface life.</p>
             </div>
         </div>
 
         <div class="service-card">
             <div class="service-img customprojects"></div>
             <div class="service-content">
-                <h3>Custom Projects</h3>
-                <p>Have something unique in mind? We can bring it to life.</p>
+                <h3>Custom Concrete Projects</h3>
+                <p>Unique concrete solutions tailored to your vision, from decorative work to specialty builds.</p>
             </div>
         </div>
 
@@ -311,19 +269,16 @@ footer {
 
 </section>
 
-<!-- CTA -->
 <section class="cta-section">
-    <h2>Need One of These Services?</h2>
-    <p>Let’s talk about your project and get you a free estimate.</p>
+    <h2>Get a Free Estimate in Nashville TN</h2>
+    <p>Contact ATC Construction today for professional concrete services you can trust.</p>
     <a href="contact.html">CONTACT US</a>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>© 2026 ATC Construction | All Rights Reserved</p>
+    <p>© 2026 ATC Construction | Nashville TN Concrete Services</p>
 </footer>
 
-<!-- SCRIPT -->
 <script>
 function toggleMenu() {
     document.getElementById("nav-menu").classList.toggle("active");

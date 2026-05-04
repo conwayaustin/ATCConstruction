@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XPCPMYNY9M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <!-- ================= SEO SECTION (EDIT THIS) ================= -->
+  gtag('config', 'G-XPCPMYNY9M');
+</script>
+    <!-- ================= SEO SECTION ================= -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About ATC Construction | Owner & Experience</title>
+    <title>About ATC Construction | Nashville Concrete Contractor</title>
 
-    <meta name="description" content="Learn about ATC Construction, an owner-operated concrete business focused on quality and reliability.">
-    <meta name="keywords" content="about concrete contractor, owner operated construction, ATC Construction">
+    <meta name="description" content="Learn about ATC Construction, an owner-operated concrete contractor serving Nashville, TN and surrounding areas. Quality driveways, patios, walkways, and more.">
+    <meta name="keywords" content="about concrete contractor Nashville TN, owner operated construction Nashville, ATC Construction Nashville">
     <meta name="author" content="ATC Construction">
-    <!-- =========================================================== -->
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="About ATC Construction | Nashville Concrete Contractor">
+    <meta property="og:description" content="Owner-operated concrete company serving Nashville, TN. Built on experience and quality workmanship.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/Hero1.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ATC Construction",
+      "telephone": "+1-615-551-5986",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Nashville, TN and surrounding areas"
+      },
+      "description": "Owner-operated concrete contractor specializing in driveways, patios, walkways, and custom projects.",
+      "openingHours": "Mo-Sa 08:00-18:00"
+    }
+    </script>
 
 <style>
 
@@ -43,19 +72,17 @@ header {
 }
 
 .logo {
-    font-weight: 800;
-    height: 120px;          /* bigger nav logo area */
+    height: 120px;
     display: flex;
     align-items: center;
 }
 
 .logo img {
-    height: 100%;           /* fills container */
+    height: 100%;
     width: auto;
     object-fit: contain;
-    display: block;
-    max-height: none;       /* IMPORTANT: removes your 60px limit */
 }
+
 /* NAV */
 nav {
     display: flex;
@@ -121,12 +148,10 @@ section {
 /* HEADSHOT */
 .headshot {
     height: 350px;
-
     background-image: url("images/about1.png");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-
     border-radius: 10px;
 }
 
@@ -139,7 +164,7 @@ section {
     margin-bottom: 15px;
 }
 
-/* HIGHLIGHT BAR */
+/* HIGHLIGHT */
 .highlight {
     background: #111;
     color: white;
@@ -214,9 +239,10 @@ footer {
 
 <body>
 
-<!-- HEADER -->
 <header>
-    <div class="logo"><img src="images/ATCLOGO.png" alt="ATC Construction Logo"></div>
+    <div class="logo">
+        <img src="images/ATCLOGO.png" alt="ATC Construction Nashville Concrete Contractor Logo">
+    </div>
 
     <div class="hamburger" onclick="toggleMenu()">☰</div>
 
@@ -231,40 +257,37 @@ footer {
     <a href="contact.html" class="cta-btn">Contact Us</a>
 </header>
 
-<!-- HERO -->
 <section class="hero">
     <div class="hero-overlay">
-        <h1>About Us</h1>
-        <p>Built on Experience. Driven by Quality.</p>
+        <h1>About ATC Construction</h1>
+        <p>Serving Nashville, TN & Surrounding Areas</p>
     </div>
 </section>
 
-<!-- ABOUT -->
 <section>
 
     <div class="about-grid">
 
-        <!-- HEADSHOT -->
         <div class="headshot"></div>
 
-        <!-- TEXT -->
         <div class="about-text">
-            <h2>Owner-Operated. Quality-Focused.</h2>
+            <h2>Owner-Operated Concrete Contractor in Nashville, TN</h2>
 
             <p>
-                ATC Construction is built on hard work, experience, and attention to detail.
+                ATC Construction is an owner-operated concrete company proudly serving Nashville, TN and surrounding areas.
+                Built on hard work, experience, and attention to detail, every project is handled with care from start to finish.
             </p>
 
             <p>
-                As an owner-operated business, every project is handled with care — from small residential jobs to larger installations.
+                From driveways and patios to walkways and custom concrete projects, we focus on delivering strong, long-lasting results that homeowners can rely on.
             </p>
 
             <p>
-                The goal is simple: deliver strong, long-lasting results that customers can trust.
+                Being owner-operated means no shortcuts, no rushed work, and no compromises on quality — just honest craftsmanship done right.
             </p>
 
             <p>
-                No shortcuts. No rushed work. Just quality done right.
+                Whether you're upgrading your home or starting a new project, ATC Construction is committed to getting the job done right the first time.
             </p>
         </div>
 
@@ -272,28 +295,32 @@ footer {
 
 </section>
 
-<!-- HIGHLIGHT -->
 <div class="highlight">
-    Licensed • Insured • Owner Operated • Detail Focused
+    Licensed • Insured • Owner Operated • Serving Nashville, TN & Surrounding Areas
 </div>
 
-<!-- CTA -->
 <section class="cta-section">
     <h2>Let’s Build Something That Lasts</h2>
-    <p>Reach out today for a free estimate.</p>
+    <p>Contact us today for a free concrete estimate.</p>
     <a href="contact.html">CONTACT US</a>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>© 2026 ATC Construction | All Rights Reserved</p>
+    <p>© 2026 ATC Construction | Nashville Concrete Contractor | All Rights Reserved</p>
 </footer>
 
-<!-- SCRIPT -->
 <script>
 function toggleMenu() {
     document.getElementById("nav-menu").classList.toggle("active");
 }
+</script>
+<script>
+document.querySelector("form").addEventListener("submit", function () {
+  gtag('event', 'conversion', {
+    'event_category': 'lead',
+    'event_label': 'contact_form_submit'
+  });
+});
 </script>
 
 </body>

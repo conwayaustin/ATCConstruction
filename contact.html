@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XPCPMYNY9M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <!-- ================= SEO SECTION (EDIT THIS) ================= -->
+  gtag('config', 'G-XPCPMYNY9M');
+</script>
+    <!-- ================= SEO SECTION ================= -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact ATC Construction | Free Quote</title>
+    <title>Contact ATC Construction | Free Concrete Quote in Nashville, TN</title>
 
-    <meta name="description" content="Contact ATC Construction today for a free estimate on your concrete or epoxy project.">
-    <meta name="keywords" content="contact concrete contractor, get quote concrete, ATC Construction contact">
+    <meta name="description" content="Contact ATC Construction for a free concrete estimate in Nashville, TN and surrounding areas. Call or request a quote for driveways, patios, walkways, and more.">
+    <meta name="keywords" content="concrete contractor Nashville TN, contact concrete company Nashville, driveway estimate Nashville, patio contractor near me">
     <meta name="author" content="ATC Construction">
-    <!-- =========================================================== -->
 
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="Contact ATC Construction | Free Quote">
+    <meta property="og:description" content="Get a free estimate for your concrete project in Nashville, TN.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/Hero1.png">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Structured Data (LOCAL BUSINESS SEO BOOST) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ATC Construction",
+      "telephone": "+1-615-551-5986",
+      "email": "info@atcconstruction.com",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Nashville, TN and surrounding areas"
+      },
+      "description": "Concrete contractor specializing in driveways, patios, walkways, and custom projects.",
+      "openingHours": "Mo-Sa 08:00-18:00"
+    }
+    </script>
 
 <style>
 
@@ -43,19 +74,17 @@ header {
 }
 
 .logo {
-    font-weight: 800;
-    height: 120px;          /* bigger nav logo area */
+    height: 120px;
     display: flex;
     align-items: center;
 }
 
 .logo img {
-    height: 100%;           /* fills container */
+    height: 100%;
     width: auto;
     object-fit: contain;
-    display: block;
-    max-height: none;       /* IMPORTANT: removes your 60px limit */
 }
+
 /* NAV */
 nav {
     display: flex;
@@ -147,9 +176,9 @@ button {
     margin-bottom: 10px;
 }
 
-/* IMAGE / MAP PLACEHOLDER */
+/* MAP */
 .map-placeholder {
-     margin-top: 20px;
+    margin-top: 20px;
     height: 200px;
     background-image: url("images/about2.png");
     background-size: cover;
@@ -223,9 +252,10 @@ footer {
 
 <body>
 
-<!-- HEADER -->
 <header>
-    <div class="logo"><img src="images/ATCLOGO.png" alt="ATC Construction Logo"></div>
+    <div class="logo">
+        <img src="images/ATCLOGO.png" alt="ATC Construction Nashville Concrete Contractor Logo">
+    </div>
 
     <div class="hamburger" onclick="toggleMenu()">☰</div>
 
@@ -240,29 +270,37 @@ footer {
     <a href="contact.html" class="cta-btn">Contact Us</a>
 </header>
 
-<!-- HERO -->
 <section class="hero">
     <div class="hero-overlay">
-        <h1>Contact Us</h1>
-        <p>Get Your Free Estimate</p>
+        <h1>Contact ATC Construction</h1>
+        <p>Serving Nashville, TN & Surrounding Areas</p>
     </div>
 </section>
 
-<!-- CONTACT -->
 <section>
+
+    <h2>Request a Free Concrete Estimate</h2>
+    <p style="margin-bottom:30px;">
+        Looking for a reliable concrete contractor in Nashville, TN? Fill out the form below and we’ll get back to you quickly with a free quote.
+    </p>
 
     <div class="contact-grid">
 
         <!-- FORM -->
-        <form>
-            <h2>Request a Quote</h2>
+        <form action="https://formspree.io/f/xvzlkzpw" method="POST">
 
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="tel" placeholder="Phone Number">
-            <textarea rows="5" placeholder="Tell us about your project..." required></textarea>
+            <input type="text" name="name" placeholder="Full Name" required>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <input type="tel" name="phone" placeholder="Phone Number">
+
+            <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+
+            <input type="hidden" name="_subject" value="New ATC Construction Lead">
 
             <button type="submit">SUBMIT</button>
+
         </form>
 
         <!-- INFO -->
@@ -270,35 +308,40 @@ footer {
             <h3>Contact Information</h3>
             <p><strong>Phone:</strong> (615) 551-5986</p>
             <p><strong>Email:</strong> info@atcconstruction.com</p>
+            <p><strong>Service Area:</strong> Nashville, TN & Surrounding Areas</p>
             <p><strong>Hours:</strong> Mon–Sat | 8AM – 6PM</p>
 
-            <div class="map-placeholder">
-                <!-- Replace with Google Maps iframe if desired -->
-            </div>
+            <div class="map-placeholder"></div>
         </div>
 
     </div>
 
 </section>
 
-<!-- CTA -->
 <section class="cta-section">
     <h2>Prefer to Talk Directly?</h2>
-    <p>Give us a call today and we’ll walk you through your project.</p>
-    <a href="tel:1234567890">CALL NOW</a>
+    <p>Call us now and we’ll walk you through your project.</p>
+    <a href="tel:6155515986" onclick="gtag('event','phone_call_click');">
+CALL NOW
+</a>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>© 2026 ATC Construction | All Rights Reserved</p>
+    <p>© 2026 ATC Construction | Nashville Concrete Contractor | All Rights Reserved</p>
 </footer>
 
-<!-- SCRIPT -->
 <script>
 function toggleMenu() {
     document.getElementById("nav-menu").classList.toggle("active");
 }
 </script>
-
+<script>
+document.querySelector("form").addEventListener("submit", function () {
+  gtag('event', 'conversion', {
+    'event_category': 'lead',
+    'event_label': 'contact_form_submit'
+  });
+});
+</script>
 </body>
 </html>
